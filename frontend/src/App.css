@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at 50% 15%, #1e1347 0%, #0d0821 50%, #04020a 100%);
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(26, 21, 53, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 22px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 26px;
+  background: linear-gradient(135deg, #00ffcc, #00aaff, #bd00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.app-header p {
+  margin: 5px 0 0;
+  color: #a0aec0;
+  font-size: 14px;
+}
+
+.status-badge {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.status-badge.online {
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+  color: #050b08;
+  box-shadow: 0 0 20px rgba(0, 255, 150, 0.5);
+}
+
+.status-badge.offline {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 65, 108, 0.5);
+}
+
+.glass-panel {
+  background: rgba(18, 15, 38, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(0, 255, 204, 0.3);
+}
+
+.glass-panel h3 {
+  margin: 0 0 15px 0;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #00ffcc;
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #a0aec0;
+  margin-bottom: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+select, input[type="range"] {
+  width: 100%;
+  accent-color: #00ffcc;
+}
+
+select {
+  padding: 12px;
+  background: rgba(10, 8, 24, 0.9);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+select:hover, select:focus {
+  border-color: #00ffcc;
+}
+
+.play-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #00ffcc, #00aaff);
+  color: #04080f;
+  font-weight: 800;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 20px rgba(0, 255, 204, 0.4);
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 255, 204, 0.7);
+  background: linear-gradient(135deg, #33ffdb, #33bbff);
+}
+
+.telemetry-row {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #cbd5e0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 8px;
+}
+
+.telemetry-row strong {
+  color: #00ffcc;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.screen-reader-feed {
+  margin: 0;
+  font-size: 14px;
+  color: #e2e8f0;
+  font-style: italic;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 3px solid #00ffcc;
+}
